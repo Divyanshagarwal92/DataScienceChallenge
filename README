@@ -1,0 +1,24 @@
+Python Libraries:
+1. Numpy
+2. Matplotlib
+3. Scikit-learn
+4. NLTK
+5. gensim
+
+Usage:
+1. ./data.py 
+( takes 5 mins to run)
+2. ./testing-setup.py
+
+Instructions:
+data.py: 
+	1. Loads the data
+	2. Gets word2vec features for each sentence using pre-trained word2vec model 'GoogleNews-vectors-negative300.bin'
+	3. The features and the labels are saved as numpy variables in 'features.npy' and 'labels.npy'
+
+
+testing-setup.py: Gives the predcitions on test set based on the best classifier( Random Foresnt) and parameter setting (n_estimators = 15)
+
+classifier_set.py:
+	Describes the different classifiers used: SVM, adaptiveBoosting, DecisionTree, RandomForest.
+	This code was also used to run various experiments for a given classifier to obtain the best parameter setting
